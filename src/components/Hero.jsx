@@ -351,48 +351,38 @@ const Hero = () => {
               "
             >
 
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-
-                href="#contact"
-
-                className="
-                inline-flex
-
-                items-center
-                justify-center
-
-                gap-3
-
-                px-8
-                py-3
-
-                rounded-full
-
-                bg-gradient-to-r
-                from-pink-500
-                to-rose-600
-
-                text-white
-
-                font-semibold
-
-                shadow-lg
-                shadow-pink-500/30
-
-                hover:shadow-pink-500/50
-
-                transition-all
-                duration-300
-                "
+              <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => {
+              document.getElementById("contact")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+              });
+              }}
+              className="
+              inline-flex
+              items-center
+              justify-center
+              gap-3
+              px-8
+              py-3
+              rounded-full
+              bg-gradient-to-r
+              from-pink-500
+              to-rose-600
+              text-white
+              font-semibold
+              shadow-lg
+              shadow-pink-500/30
+              hover:shadow-pink-500/50
+              transition-all
+              duration-300
+              "
               >
-
-                Hire Me
-
-                <FaArrowRight />
-
-              </motion.a>
+              Hire Me
+              <FaArrowRight />
+              </motion.button>
 
               <motion.a
                 whileHover={{ scale: 1.05 }}
