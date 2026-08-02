@@ -110,11 +110,14 @@ const Navbar = () => {
 
           </ul>
 
-          {/* Theme Toggle */}
+        </div>
+
+        {/* Theme Toggle */}
 
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="
+            ml-8
             p-2
             rounded-full
             bg-pink-100
@@ -142,8 +145,6 @@ const Navbar = () => {
             )}
 
           </button>
-
-        </div>
 
         {/* Mobile Button */}
 
